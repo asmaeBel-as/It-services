@@ -1,0 +1,94 @@
+:root {
+  --yellow: #F5C32C;
+  --orange: #BC2C33;
+  --yellowish: #bc2c337a;
+  --black: #242D49;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.card {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.609)), url(../../Assets/map.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  z-index: -1;
+  border-radius: 0%;
+  position: relative;
+}
+.card .secContainer {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card .secContainer .title {
+  color: var(--blackColor);
+  line-height: 1.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.card .secContainer .videoCard {
+  margin-top: 2rem;
+}
+.card .secContainer .videoCard .cardContent {
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+.card .secContainer .videoCard .cardContent .cardText h2 {
+  color: var(--whiteColor);
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+.card .secContainer .videoCard .cardContent .cardText p {
+  color: var(--whiteColor);
+  opacity: 0.7;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.card .secContainer .videoCard .cardVideo {
+  border: 2px solid var(--whiteColor);
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card .secContainer .videoCard .cardVideo video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 540px) {
+  .card {
+    margin-top: 10rem;
+  }
+}
+@media screen and (device-width: 540px) {
+  .card {
+    margin-top: 20rem;
+  }
+}
+@media screen and (device-width: 280px) {
+  .card {
+    margin-top: 15rem;
+  }
+}
+@media screen and (min-device-width: 360px) and (max-device-width: 375px) {
+  .card {
+    margin-top: 15rem;
+  }
+}
+@media screen and (min-device-width: 820px) and (max-device-width: 1024px) {
+  .card {
+    margin-top: 5rem !important;
+  }
+}/*# sourceMappingURL=card.css.map */

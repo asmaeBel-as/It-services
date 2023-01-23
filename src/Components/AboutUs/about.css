@@ -1,0 +1,222 @@
+:root {
+  --yellow: #F5C32C;
+  --orange: #BC2C33;
+  --yellowish: #bc2c337a;
+  --black: #242D49;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 0;
+}
+.about-us-container .program__heada {
+  margin: 5rem 0 -2rem 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.about-us-container .program__heada span {
+  background: rgba(188, 44, 51, 0.4784313725);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.works {
+  padding: 0 3rem 0 3rem;
+  display: flex;
+  height: 90vh;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  /* scroll */
+  align-items: center;
+}
+
+/* left side */
+.awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.awesome > :nth-child(1) {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.awesome > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+
+.s-button {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 2rem;
+  color: white !important;
+  background: var(--orange) !important;
+}
+
+/* right side */
+.w-right {
+  position: relative;
+  margin-left: 7rem;
+}
+
+.w-mainCircle {
+  left: 9rem;
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  box-shadow: var(--smboxShadow);
+  top: 2rem;
+  background: white;
+  /* darkMode */
+  z-index: 2;
+}
+
+.w-mainCircle > * {
+  position: absolute;
+}
+
+.w-mainCircle > :nth-child(1) {
+  top: -3rem;
+  left: 6rem;
+}
+
+.w-mainCircle > :nth-child(2) {
+  left: -3rem;
+  top: 5rem;
+}
+
+.w-mainCircle > :nth-child(3) {
+  left: 6rem;
+  top: 5rem;
+}
+
+.w-mainCircle > :nth-child(4) {
+  left: 15rem;
+  top: 5rem;
+}
+
+.w-mainCircle > :nth-child(5) {
+  left: 6rem;
+  top: 13rem;
+}
+
+.w-secCircle {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: "none";
+  box-shadow: var(--smboxShadow);
+  background: white;
+}
+
+.w-secCircle > img {
+  transform: scale(0.6);
+}
+
+.w-backCircle {
+  position: absolute;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  /* darkMode */
+  z-index: 1;
+}
+
+.blueCircle {
+  background: #1949b8;
+  left: 18rem;
+  top: 0rem;
+}
+
+.yellowCircle {
+  background: var(--orange);
+  left: 18rem;
+  top: 8rem;
+}
+
+@media screen and (max-width: 540px) {
+  .program__heada {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .works {
+    flex-direction: column;
+    height: 100rem;
+    width: 25rem;
+  }
+  .w-right {
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: start !important;
+    transform: scale(0.7) !important;
+    margin-right: 8rem;
+    margin-top: 5rem;
+  }
+  .w-mainCircle {
+    position: static;
+  }
+  .w-backCircle {
+    left: 8rem !important;
+  }
+}
+@media only screen and (min-device-width: 767px) and (max-device-width: 1000px) {
+  .program__heada {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .works {
+    margin-top: -15rem;
+  }
+  .works .w-right {
+    transform: scale(0.7) !important;
+    margin-left: -8rem !important;
+  }
+}
+@media only screen and (device-width: 1024px) {
+  .program__heada {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+  }
+  .works {
+    margin-top: -2rem;
+  }
+  .works .w-right {
+    transform: scale(0.9) !important;
+    margin-left: -5rem !important;
+  }
+}
+@media only screen and (device-width: 280px) {
+  .works {
+    width: 19rem;
+  }
+  .works .w-right {
+    transform: scale(0.6) !important;
+    margin-left: 5rem !important;
+  }
+}/*# sourceMappingURL=about.css.map */

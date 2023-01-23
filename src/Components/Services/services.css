@@ -1,0 +1,137 @@
+:root {
+  --yellow: #F5C32C;
+  --orange: #BC2C33;
+  --yellowish: #bc2c337a;
+  --black: #242D49;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.program__headss {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: -9rem;
+  margin-top: 4rem;
+}
+.program__headss span {
+  background: var(--yellowish);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.services {
+  display: flex;
+  height: 30rem;
+  margin-bottom: 8rem;
+  margin-top: 9rem;
+  /* scroll view */
+  padding-top: 3rem;
+  /* blur */
+}
+.services .awesome {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* gap: 20px; */
+}
+.services .awesome > :nth-child(1) {
+  color: #242D49;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.services .awesome > :nth-child(2) {
+  color: var(--orange);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.services .awesome > :nth-child(3) {
+  color: var(--gray);
+  font-size: 14px;
+  margin-top: 1rem;
+}
+.services .awesome .s-button {
+  width: 11rem;
+  height: 2rem;
+  margin-top: 1rem;
+  color: white !important;
+  background: var(--orange);
+}
+.services .cards {
+  position: relative;
+}
+.services .cards > * {
+  position: absolute;
+}
+.services .s-blur2 {
+  left: 20rem;
+  top: 13rem !important;
+}
+.services .s-blur1 {
+  top: 13rem;
+  left: -18rem;
+}
+
+/* left side */
+/* right sided */
+@media screen and (max-width: 540px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 110rem;
+  }
+  .services .awesome {
+    padding-top: 10rem;
+  }
+  .cards {
+    margin-top: -10rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+  }
+  .cards > * {
+    position: static !important;
+  }
+}
+@media screen and (device-width: 540px) {
+  .cards {
+    margin-left: 7rem;
+  }
+}
+@media screen and (min-device-width: 767px) and (max-device-width: 1000px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 110rem;
+  }
+  .services .awesome {
+    padding-top: 10rem;
+  }
+  .cards {
+    margin-left: 12rem;
+  }
+}
+@media screen and (device-width: 768px) {
+  .cards {
+    margin-left: 12rem;
+  }
+}
+@media screen and (device-width: 280px) {
+  .cards {
+    margin-left: 0.7rem !important;
+  }
+}
+@media screen and (device-width: 1024px) {
+  .cards {
+    margin-left: -3rem !important;
+  }
+}/*# sourceMappingURL=services.css.map */

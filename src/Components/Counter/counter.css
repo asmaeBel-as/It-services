@@ -1,0 +1,145 @@
+:root {
+  --yellow: #F5C32C;
+  --yellowish:#bc2c337a;
+  --orange: #BC2C33;
+  --black: #1c4494;
+  --black2: #1c55c7d7;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgba(0, 0, 0, 0.5);
+  --orangeCard: #bc2c337a;
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.experience {
+  margin: 25rem 20rem 5rem 19rem;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  height: 30vh;
+}
+.experience .achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.experience .achievement .circle {
+  width: 7rem;
+  height: 7rem;
+  background: white;
+  border-radius: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.experience .achievement .circle::before {
+  border-radius: 100%;
+  content: "";
+  background-image: linear-gradient(to bottom, #BC2C33 0%, rgba(84, 127, 214, 0.8431372549) 100%);
+  top: -8px;
+  left: -8px;
+  bottom: -8px;
+  right: -8px;
+  position: absolute;
+  z-index: -1;
+  box-shadow: var(--boxShadow);
+}
+.experience .achievement span:nth-of-type(2) {
+  color: #BC2C33;
+}
+
+.work-backCircle {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  /* darkMode */
+  z-index: 9999;
+}
+
+.work-blueCircle {
+  background: #1949b8;
+  left: -2rem;
+  top: 150rem;
+}
+
+.work-backCircle3 {
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  /* darkMode */
+  z-index: -1;
+}
+
+.work-redCircle {
+  background: #b819a3;
+  left: 40rem;
+  top: 165rem;
+}
+
+@-webkit-keyframes work-blueCircle {
+  from {
+    transform: translateY(15rem);
+  }
+  to {
+    transform: translateX(90%);
+  }
+}
+
+@keyframes work-blueCircle {
+  from {
+    transform: translateY(15rem);
+  }
+  to {
+    transform: translateX(90%);
+  }
+}
+@media screen and (max-width: 480px) {
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5rem;
+    margin-top: 10rem !important;
+    padding-bottom: -5rem !important;
+    gap: -2;
+  }
+  .experience .achievement {
+    margin-bottom: -2rem;
+  }
+  .experience .achievement .circle {
+    width: 5rem !important;
+    height: 5rem !important;
+  }
+}
+@media screen and (device-width: 280px) {
+  .experience {
+    margin-left: 1rem;
+    margin-top: 15rem !important;
+  }
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 912px) {
+  .experience {
+    margin-top: -25rem !important;
+    margin-left: 3rem;
+  }
+}
+@media only screen and (device-width: 540px) {
+  .experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 6rem;
+    margin-top: 5rem;
+  }
+}
+@media only screen and (device-width: 1024px) {
+  .experience {
+    margin-left: 10rem;
+    margin-top: 20rem !important;
+  }
+}/*# sourceMappingURL=counter.css.map */

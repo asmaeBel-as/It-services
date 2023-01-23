@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+
+:root {
+  --primaryColor: #265077;
+  --hoverColor:  #022140;
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+   --loader-color: #0CBFAE;
+}
+
+html, body {
+    max-width: 100% !important;
+     overflow-x: hidden !important;
+     height: auto !important;
+}
+
+
+
+::-webkit-scrollbar{
+    width: 6px;
+    background: var(--greyBg);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--orange);
+    border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+ 
+  position: relative;
+  /* background-color: #121212 !important; */
+  /* color: #fff !important; */
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+img,
+video {
+  width: 100%;
+  height: auto;
+}
+
+
+::-moz-selection {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+}
+
+::selection {
+  color: var(--whiteColor);
+  background: var(--primaryColor);
+}

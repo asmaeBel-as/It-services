@@ -1,0 +1,211 @@
+:root {
+  --yellow: #F5C32C;
+  --orange: #BC2C33;
+  --orage: #f5858b;
+  --yellowish: #bc2c337a;
+  --black: #242D49;
+  --bck: #223b85;
+  --gray: #788097;
+  --blueCard: #DDF8FE;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+}
+
+.banner {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url("../../Assets/bgg.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.banner h1 {
+  color: #e4e1e1;
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.banner p {
+  color: #e4e1e1;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.banner .contact {
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 30px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+}
+
+.banner button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.banner button:hover svg {
+  margin-left: 25px;
+}
+
+.banner img {
+  -webkit-animation: updown 3s linear infinite;
+          animation: updown 3s linear infinite;
+  margin-top: -5rem;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.banner .key {
+  width: 10%;
+  z-index: -1;
+  position: absolute;
+  top: 7rem !important;
+  -webkit-animation: key 7s linear infinite;
+          animation: key 7s linear infinite;
+}
+
+.banner .shooting {
+  width: 10%;
+  position: absolute;
+  top: 8rem !important;
+  -webkit-animation: shooting 7s linear infinite;
+          animation: shooting 7s linear infinite;
+}
+
+.banner .shooting1 {
+  width: 10%;
+  position: absolute;
+  top: 6rem !important;
+  right: 20rem;
+  -webkit-animation: shooting 5s linear infinite;
+          animation: shooting 5s linear infinite;
+}
+
+.banner .shooting2 {
+  width: 10%;
+  position: absolute;
+  right: 50rem;
+  top: 10rem !important;
+  -webkit-animation: shooting 2s linear infinite;
+          animation: shooting 2s linear infinite;
+}
+
+.banner .shooting3 {
+  width: 10%;
+  position: absolute;
+  top: 6rem;
+  right: 3rem !important;
+  -webkit-animation: shooting 3s linear infinite;
+          animation: shooting 3s linear infinite;
+}
+
+.banner .shooting4 {
+  width: 10%;
+  position: absolute;
+  right: 30rem;
+  top: 6rem !important;
+  -webkit-animation: shooting 2s linear infinite;
+          animation: shooting 2s linear infinite;
+}
+
+@-webkit-keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@-webkit-keyframes key {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(100vw - 10vmin));
+  }
+}
+@keyframes key {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(calc(100vw - 10vmin));
+  }
+}
+@-webkit-keyframes shooting {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+@keyframes shooting {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+}
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+.banner .contact {
+  background: transparent;
+}
+
+@media screen and (max-width: 480px) {
+  .banner .shooting {
+    display: none;
+  }
+  .banner .shooting1 {
+    display: none;
+  }
+  .banner .shooting2 {
+    display: none;
+  }
+  .banner .shooting3 {
+    display: none;
+  }
+}/*# sourceMappingURL=home.css.map */
